@@ -1,0 +1,155 @@
+body {
+  font-family: 'Poppins';
+  font-weight: normal;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
+.header {
+  position: relative;
+  background-image: url('img/bg_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  padding: 60px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Memberikan opasitas 0.4 */
+  z-index: 1;
+}
+
+.header h1 {
+  font-size: 60px;
+  position: relative;
+  z-index: 2; /* Memastikan teks berada di atas overlay */
+}
+
+/* Efek hover dengan transform scale */
+.panel {
+  transition: transform 0.3s ease-in-out;
+}
+
+.panel:hover {
+  transform: scale(1.05); /* Membuat panel sedikit membesar saat di-hover */
+}
+
+.panel {
+  background-color: #00284C; /* Panel warna gelap */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.panel-heading {
+  background-color: #d6e8ee; /* Warna heading panel */
+  font-weight: bold;
+  color: #00284C;
+  padding: 10px;
+  border-radius: 6px 6px 0 0;
+}
+
+.panel ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.panel ul li {
+  padding: 5px 0;
+}
+
+.panel a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.panel a:hover {
+  text-decoration: underline;
+}
+
+.panel ul li a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.panel ul li a:hover {
+  color: #8DA9C4;
+  text-decoration: none;
+}
+
+.row img {
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.row img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  background-color: #00284C;
+  padding: 10px 0;
+  margin-top: 0;
+  color: white;
+  text-align: center;
+}
+
+  /* Main Content - Form */
+  main {
+    margin-top: 20px;
+  }
+
+  .form-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    max-width: 600px;
+  }
+
+  .form-label {
+    font-weight: 500;
+  }
+
+  .form-control, .form-select {
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+
+  .form-control:focus, .form-select:focus {
+    border-color: #00aaff;
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.5);
+  }
+
+  .btn-primary {
+    background-color: #00284C;
+    border-color: #00284C;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .btn-primary:hover {
+    background-color: #008ecc;
+    transform: translateY(-2px);
+  }
+
+@media (max-width: 992px) {
+  .offcanvas {
+    width: 250px;
+  }
+}

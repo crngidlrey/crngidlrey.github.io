@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title itemprop="name">Conanian Nations</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header text-center text-white" itemprop="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="container">
+      <h1 itemprop="headline" style="font-weight: bold;">CONANIAN NATIONS</h1>
+    </div>
+  </header>
+
+  <!-- Navbar for Mobile View -->
+  <nav class="navbar navbar-expand-lg navbar-dark d-md-none" style="background-color: #00284C;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="main.html" itemprop="url">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="table.html" itemprop="url">Komunitas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav id="sidebar" class="col-lg-2 col-md-4 d-none d-md-block text-white p-3" style="background-color: #00284C;" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <h5 class="sidebar-title">Menu</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="main.html" itemprop="url">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="table.html" itemprop="url">Komunitas</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="col-lg-6 col-md-8 p-4" itemprop="mainEntity" itemscope itemtype="http://schema.org/WebPageElement">
+        <div class="container mt-4">
+          <h1 itemprop="headline">Link Nonton Anime</h1>
+          <button class="btn btn-primary mb-3" onclick="location.href='form.html'" itemprop="action">Join Us</button>
+          <div style="height: 400px; overflow-y: auto; width: 100%;">
+            <table class="table table-striped table-hover w-100" itemscope itemtype="http://schema.org/Table">
+              <thead class="thead-dark sticky-top" style="background-color: #343a40; color: #fff;">
+                <tr>
+                  <th itemprop="name">Episode</th>
+                  <th itemprop="genre">Genre</th>
+                  <th itemprop="about">Judul</th>
+                  <th itemprop="url">Link</th>
+                  <th itemprop="author">Nama Submitter</th>
+                </tr>
+              </thead>
+              <tbody itemscope itemtype="https://schema.org/ItemList">
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="1" />
+                  <td>1</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Detective Conan</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">John Doe</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="2" />
+                  <td>2</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">Detective Conan</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Jane Smith</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="3" />
+                  <td>3</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">Detective Conan: The Scarlet Bullet</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Alan Walker</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="4" />
+                  <td>4</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Attack on Titan</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Emily Johnson</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="5" />
+                  <td>5</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">Naruto</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Michael Lee</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="6" />
+                  <td>6</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">Spirited Away</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Chris Kim</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="7" />
+                  <td>7</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">My Hero Academia</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Jessica Park</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="8" />
+                  <td>8</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">One Piece</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">David Garcia</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="9" />
+                  <td>9</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">Weathering With You</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Samantha Lee</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="10" />
+                  <td>10</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Jujutsu Kaisen</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Jack Brown</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="11" />
+                  <td>11</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">Fairy Tail</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Maria Gonzalez</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="12" />
+                  <td>12</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">Your Name</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Lucas Moore</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="13" />
+                  <td>13</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Tokyo Ghoul</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Sarah Wilson</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="14" />
+                  <td>14</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">Bleach</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Kevin Clark</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="15" />
+                  <td>15</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">Howl's Moving Castle</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Hannah Scott</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="16" />
+                  <td>16</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Black Clover</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Ryan Young</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="17" />
+                  <td>17</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">Death Note</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Amy Martinez</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="18" />
+                  <td>18</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">Kiki's Delivery Service</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">William Turner</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="19" />
+                  <td>19</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Hunter x Hunter</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Olivia Baker</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="20" />
+                  <td>20</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">Dragon Ball Z</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Noah Davis</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="21" />
+                  <td>21</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">Princess Mononoke</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Isabella Harris</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="22" />
+                  <td>22</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Demon Slayer</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Benjamin Lewis</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="23" />
+                  <td>23</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">Attack on Titan</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Grace Hall</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="24" />
+                  <td>24</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">The Wind Rises</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Charlotte Allen</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="25" />
+                  <td>25</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Fullmetal Alchemist</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">James Anderson</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="26" />
+                  <td>26</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">One Punch Man</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Ava King</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="27" />
+                  <td>27</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">The Tale of the Princess Kaguya</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Emma Thomas</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="28" />
+                  <td>28</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Mob Psycho 100</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">John Harris</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="29" />
+                  <td>29</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">Blue Exorcist</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Sophia Rodriguez</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="30" />
+                  <td>30</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">Castle in the Sky</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Liam Perez</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="31" />
+                  <td>31</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Code Geass</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Mia White</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="32" />
+                  <td>32</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">Black Butler</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Henry Lee</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="33" />
+                  <td>33</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">My Neighbor Totoro</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Ella Green</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="34" />
+                  <td>34</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Noragami</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Jacob Adams</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="35" />
+                  <td>35</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">Assassination Classroom</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Sophie Brown</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="36" />
+                  <td>36</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">The Secret World of Arrietty</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Lucas Wright</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="37" />
+                  <td>37</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Steins;Gate</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Aiden Martinez</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="38" />
+                  <td>38</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">JoJo's Bizarre Adventure</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Zoe Clark</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="39" />
+                  <td>39</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">The Cat Returns</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Lily Rodriguez</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="40" />
+                  <td>40</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Re:Zero</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Mason Scott</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="41" />
+                  <td>41</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">Berserk</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Olivia Parker</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="42" />
+                  <td>42</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">The Garden of Words</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Amelia Ramirez</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="43" />
+                  <td>43</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Clannad</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">James Hill</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="44" />
+                  <td>44</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">Violet Evergarden</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Emily Cooper</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="45" />
+                  <td>45</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">The Red Turtle</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Charlotte Collins</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="46" />
+                  <td>46</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Fate/Stay Night</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Sophia Rivera</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="47" />
+                  <td>47</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">Vinland Saga</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Michael Hernandez</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="48" />
+                  <td>48</td>
+                  <td itemprop="category">Movie</td>
+                  <td itemprop="name">Whisper of the Heart</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">David Hall</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="49" />
+                  <td>49</td>
+                  <td itemprop="category">Anime</td>
+                  <td itemprop="name">Erased</td>
+                  <td><a href="#" itemprop="url">Watch</a></td>
+                  <td itemprop="author">Sarah Young</td>
+                </tr>
+                <tr itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <meta itemprop="position" content="50" />
+                  <td>50</td>
+                  <td itemprop="category">Manga</td>
+                  <td itemprop="name">Gintama</td>
+                  <td><a href="#" itemprop="url">Read</a></td>
+                  <td itemprop="author">Emma Scott</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-white text-center p-3" style="background-color: #00284C;" itemscope itemtype="http://schema.org/WPFooter">
+    <p>Follow us on:</p>
+    <p>
+      <a href="https://www.youtube.com/@popsanimeindonesia" class="text-white me-3" target="_blank" itemprop="sameAs"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="https://www.instagram.com/detectiveconan.idn/profilecard/?igsh=Z3F2endxZDNhZjY1" class="text-white" target="_blank" itemprop="sameAs"><i class="fab fa-instagram fa-2x"></i></a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title itemprop="name">Conanian Nations</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header text-center text-white" itemprop="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="container">
+      <h1 itemprop="headline" style="font-weight: bold;">CONANIAN NATIONS</h1>
+    </div>
+  </header>
+
+  <!-- Navbar for Mobile View -->
+  <nav class="navbar navbar-expand-lg navbar-dark d-md-none" style="background-color: #00284C;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="main.html" itemprop="url">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="table.html" itemprop="url">Komunitas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav id="sidebar" class="col-lg-2 col-md-4 d-none d-md-block text-white p-3" style="background-color: #00284C;" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <h5 class="sidebar-title">Menu</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="main.html" itemprop="url">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="table.html" itemprop="url">Komunitas</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="col-lg-6 col-md-8 col-sm-12 p-4" itemprop="mainContentOfPage">
+        <h1 itemprop="name">Join Conanian Nations</h1>
+        <form action="table.html" method="GET" itemscope itemtype="http://schema.org/Action">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="name" name="name" itemprop="agent" required>
+          </div>
+          <div class="mb-3">
+            <label for="episode" class="form-label">Episode</label>
+            <select id="episode" class="form-select" name="episode" itemprop="object" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="other">Other</option>
+            </select>
+            <input type="number" id="other-episode" class="form-control mt-2" placeholder="Isi Episode Lain" style="display: none;" itemprop="additionalType">
+          </div>
+          <div class="mb-3">
+            <label for="genre" class="form-label">Genre</label>
+            <select id="genre" class="form-select" name="genre" itemprop="additionalType" required>
+              <option value="Manga">Manga</option>
+              <option value="Anime">Anime</option>
+              <option value="Movie">Movie</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="title" class="form-label">Judul</label>
+            <input type="text" class="form-control" id="title" name="title" itemprop="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="link" class="form-label">Link</label>
+            <input type="url" class="form-control" id="link" name="link" itemprop="url" required>
+          </div>
+          <button type="submit" class="btn btn-primary" itemprop="potentialAction">Submit</button>
+        </form>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer text-white text-center p-3" style="background-color: #00284C;" itemscope itemtype="http://schema.org/WPFooter">
+        <p>Follow us on:</p>
+        <p>
+          <a href="https://www.youtube.com/@popsanimeindonesia" class="text-white me-3" target="_blank" itemprop="sameAs">
+            <i class="fab fa-youtube fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/detectiveconan.idn/profilecard/?igsh=Z3F2endxZDNhZjY1" class="text-white" target="_blank" itemprop="sameAs">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </p>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('episode').addEventListener('change', function() {
+      if (this.value === 'other') {
+        document.getElementById('other-episode').style.display = 'block';
+      } else {
+        document.getElementById('other-episode').style.display = 'none';
+      }
+    });
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

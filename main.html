@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title itemprop="name">Conanian Nations</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header text-center text-white" itemprop="mainEntity" itemscope itemtype="https://schema.org/WPHeader">
+    <div class="container">
+      <h1 style="font-weight: bold;" itemprop="headline">CONANIAN NATIONS</h1>
+    </div>
+  </header>
+
+  <!-- Navbar for Mobile View -->
+  <nav class="navbar navbar-expand-lg navbar-dark d-md-none" style="background-color: #00284C;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="main.html" itemprop="url">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="table.html" itemprop="url">Komunitas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Layout -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav id="sidebar" class="col-lg-2 col-md-4 d-none d-md-block text-white p-3" style="background-color: #00284C;" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <h5 class="sidebar-title" itemprop="name">Menu</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="main.html" itemprop="url">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="table.html" itemprop="url">Komunitas</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="col-lg-6 col-md-8 col-sm-12 p-4" itemscope itemtype="https://schema.org/Article">
+        <div class="container-fluid">
+          <!-- Gallery Section -->
+          <section class="gallery panel mb-4 p-3" itemscope itemtype="https://schema.org/ImageGallery">
+            <h3 class="panel-heading" itemprop="name">Gallery</h3>
+            <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                  <img src="img/conan_1.jpg" class="d-block w-100 img-fluid" alt="Conan Image 1" itemprop="contentUrl">
+                </div>
+                <div class="carousel-item" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                  <img src="img/conan_2.png" class="d-block w-100 img-fluid" alt="Conan Image 2" itemprop="contentUrl">
+                </div>
+                <div class="carousel-item" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                  <img src="img/conan_3.png" class="d-block w-100 img-fluid" alt="Conan Image 3" itemprop="contentUrl">
+                </div>
+                <div class="carousel-item" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                  <img src="img/conan_4.jpg" class="d-block w-100 img-fluid" alt="Conan Image 4" itemprop="contentUrl">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+
+          <!-- Greetings Section -->
+          <section class="greetings panel mb-4 p-3" itemscope itemtype="https://schema.org/CreativeWork">
+            <h2 class="panel-heading" itemprop="headline">Welcome to Conanian Nations</h2>
+            <p itemprop="text">
+              Welcome to Conanian Nations! Conanian Nations is a community dedicated to all fans of Detective Conan across the globe. Here, we celebrate the adventures of Shinichi Kudo, also known as Conan Edogawa, as he solves mysteries and brings justice.
+            </p>
+          </section>
+
+          <!-- About Section -->
+          <section class="about panel mb-4 p-3" itemscope itemtype="https://schema.org/CreativeWork">
+            <h2 class="panel-heading" itemprop="headline">Plot</h2>
+            <p itemprop="text">
+              Shinichi Kudo, a great mystery expert at only seventeen, is already well known for having solved several challenging cases. One day, when Shinichi sees two suspicious men and decides to follow them, he inadvertently becomes witness to a disturbing illegal activity...
+            </p>
+          </section>
+
+          <!-- List of Websites Section -->
+          <section class="websites-list panel mb-4 p-3" itemscope itemtype="https://schema.org/WebPage">
+            <h3 class="panel-heading" itemprop="name">Official Websites</h3>
+            <ul>
+              <li><a href="https://www.conan-portal.com/#newsContent" target="_blank" itemprop="url">Detective Conan Site</a></li>
+              <li><a href="https://www.conan-movie.jp/2024/index.html" target="_blank" itemprop="url">Detective Conan Movies Site</a></li>
+              <li><a href="https://myanimelist.net/anime/235/Detective_Conan" target="_blank" itemprop="url">Detective Conan MyAnimeList</a></li>
+              <li><a href="https://www.detectiveconanworld.com/" target="_blank" itemprop="url">Detective Conan World Wiki</a></li>
+            </ul>
+          </section>
+        </div>
+      </main>
+  
+      <!-- Right Sidebar Content -->
+      <aside class="col-lg-3 col-md-12 p-4" itemscope itemtype="https://schema.org/WPSideBar">
+        <!-- News Section -->
+        <section class="anime panel mb-4 p-3" itemscope itemtype="https://schema.org/CreativeWork">
+          <h3 class="panel-heading" itemprop="headline">Anime Update</h3>
+          <ul itemprop="about">
+            <li>Anime Release Date: Chapter XXXX - Unknown (TBA)</li>
+            <li>Anime Release Date: Episode 1078 - The Black Organization's Scheme (April 01, 2023)</li>
+            <li>Anime Release Date: Movie XXV - To Be Announced</li>
+          </ul>
+        </section>
+        <!-- Manga Update Section -->
+        <section class="manga-update panel mb-4 p-3" itemscope itemtype="https://schema.org/CreativeWork">
+          <h3 class="panel-heading" itemprop="headline">Manga Update</h3>
+          <ul itemprop="about">
+            <li>Latest Chapter Released: Chapter 1102</li>
+            <li>Next Chapter Expected: Chapter 1103 - Release Date: TBA</li>
+          </ul>
+        </section>
+
+        <!-- Movie Update Section -->
+        <section class="movie-update panel mb-4 p-3" itemscope itemtype="https://schema.org/CreativeWork">
+          <h3 class="panel-heading" itemprop="headline">Movie Update</h3>
+          <ul itemprop="about">
+            <li>Movie 25 - Released on April 2023</li>
+            <li>Upcoming Movie: Detective Conan: The Scarlet Bullet - Coming Soon</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-white text-center p-3" style="background-color: #00284C;" itemscope itemtype="https://schema.org/WPFooter">
+    <p itemprop="text">Follow us on:</p>
+    <p>
+      <a href="https://www.youtube.com/@popsanimeindonesia" class="text-white me-3" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="https://www.instagram.com/detectiveconan.idn/profilecard/?igsh=Z3F2endxZDNhZjY1" class="text-white" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
